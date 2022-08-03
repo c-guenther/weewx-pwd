@@ -1,0 +1,21 @@
+This is a driver for weewx that collects data from Vaisala PWDxx hardware. Variants are PWD10/20/50 to measure Visibility up to 10km/20km/50km or PWD12/22/52 to measure visibility as before plus output 7 variants of "present weather" detected by the Station.
+
+Installation
+
+0) install weewx (see the weewx user guide)
+
+1) download the driver
+
+wget -O weewx-pwd.zip https://github.com/c-guenther/weewx-pwd/archive/master.zip
+
+2) install the driver
+
+wee_extension --install weewx-pwd.zip
+
+3) configure the driver
+
+wee_config --reconfigure
+
+4) start weewx
+
+sudo /etc/init.d/weewx start
